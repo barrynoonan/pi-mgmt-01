@@ -1,0 +1,47 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "home.thenoonans.io" IN {
+  type master;
+  file "/var/lib/bind/db.home.thenoonans.io";
+  notify yes;
+  allow-update { none; };
+  allow-transfer { 10.2.2.2; };
+};
+
+zone "1.2.10.in-addr.arpa" {
+  type master;
+  file "/var/lib/bind/db.rev.1.2.10.in-addr.arpa";
+  notify yes;
+  allow-update { none; };
+  allow-transfer { 10.2.2.2; };
+};
+
+zone "2.2.10.in-addr.arpa" {
+  type master;
+  file "/var/lib/bind/db.rev.2.2.10.in-addr.arpa";
+  notify yes;
+  allow-update { none; };
+  allow-transfer { 10.2.2.2; };
+};
+
+zone "3.2.10.in-addr.arpa" {
+  type master;
+  file "/var/lib/bind/db.rev.3.2.10.in-addr.arpa";
+  notify yes;
+  allow-update { none; };
+  allow-transfer { 10.2.2.2; };
+};
+
+zone "6.2.10.in-addr.arpa" {
+  type master;
+  file "/var/lib/bind/db.rev.6.2.10.in-addr.arpa";
+  notify yes;
+  allow-update { none; };
+  allow-transfer { 10.2.2.2; };
+};
