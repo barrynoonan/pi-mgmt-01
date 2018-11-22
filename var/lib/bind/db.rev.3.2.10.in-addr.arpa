@@ -1,0 +1,13 @@
+$TTL 600
+@	IN SOA pi-mgmt01.home.thenoonans.io. root.localhost (
+  2018041401	; serial
+  10800		; refresh
+  3600		; retry
+  604800	; expire
+  86400)		; minimum
+
+@ 	IN	NS	pi-mgmt-01.home.thenoonans.io.
+@ 	IN	NS	pi-mgmt-02.home.thenoonans.io.
+
+1	IN	PTR	diskstation.home.thenoonans.io.
+2	IN	PTR	imac.home.thenoonans.io.
