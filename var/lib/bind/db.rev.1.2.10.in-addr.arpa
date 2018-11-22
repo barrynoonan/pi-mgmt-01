@@ -1,0 +1,19 @@
+$TTL 600
+@	IN SOA pi-mgmt-01.home.thenoonans.io. root.localhost (
+  2018031301	; serial
+  10800		; refresh
+  3600		; retry
+  604800	; expire
+  86400)		; minimum
+
+@ 	IN	NS	pi-mgmt-01.home.thenoonans.io.
+@ 	IN	NS	pi-mgmt-02.home.thenoonans.io.
+
+1	IN	PTR	unifi-core-sw01.home.thenoonans.io.
+5	IN	PTR	unifi-sw01.home.thenoonans.io.
+6	IN	PTR	unifi-sw02.home.thenoonan.io.
+7	IN	PTR	unifi-sw03.home.thenoonans.io.
+10	IN	PTR	unifi-ap01.home.thenoonans.io.
+21	IN	PTR	lapac-1200-01.home.thenoonans.io.
+22	IN	PTR	lapac-1200-02.home.thenoonans.io.
+23	IN	PTR	lapac-1200-03.home.thenoonans.io.
